@@ -1,0 +1,54 @@
+<!-------- JQUERY 3.5.1 JS FILE ------------>
+<script src="js/jquery.v3.5.1.js"></script>
+<!-------- JQUERY MAIN FILE ---------------->
+<script src="js/main.js"></script>
+
+<nav class='nav'>
+  <div class="nav-menu flex-row">
+    <div class='nav-logo'>
+      <a href='index.html'>
+      <img src='logo.png'>
+      <h1>theTangible</h1></a>
+    </div>
+    <div class="toggle">
+      <div class="toggle-icons">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>  
+    <div>
+      <ul class="nav-items">
+        <!-- home page link -->
+        <a href="index.html"><li class="nav-link">Home</li></a>
+        <!-- categories -->
+        <a href="library.html"><li class="nav-link">Library</li></a>
+        <!-- about page link -->
+        <a href="abt.html"><li class="nav-link">About</li></a>
+        <!-- search -->
+        <li class='nav-link search'>
+            <!-- image -->
+            <i class="fas fa-search"></i>
+            <!-- drop down div -->
+            <div class='drop-down alignright'>
+              <!-- start of freefind search box html -->
+              <table cellpadding=0>
+                <tr>
+                  <td>
+                    <form style="margin-left: 1rem; margin-top: -0.1rem;"action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                      <input type="hidden" name="si" value="78192530">
+                      <input type="hidden" name="pid" value="r">
+                      <input type="hidden" name="n" value="0">
+                      <input type="hidden" name="_charset_" value="">
+                      <input type="hidden" name="bcd" value="&#247;">
+                      <input type="text" name="query" size="15"> 
+                      <input type="submit" value="search">
+                    </form>
+                  </td>
+                </tr>
+              </table>
+              <!-- end of freefind search box html -->
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
